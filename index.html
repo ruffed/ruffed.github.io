@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ruffed Technologies</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Argent Pixel CF", monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color: whitesmoke;
+        background-color: rgb(26, 25, 25);
+      }
+
+      #canvas-container {
+        position: relative;
+        width: 30vw; /* Adjusted to be smaller */
+        height: 30vw; /* Keep aspect ratio but make it square */
+        margin: 20px auto;
+        border: 3px dotted whitesmoke;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for better emphasis */
+      }
+
+      #canvas-container canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      h1,
+      h2,
+      p {
+        max-width: 800px; /* Ensures text doesn't stretch too wide on large screens */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ruffed Technologies</h1>
+    <h2><i>Offensive security for the LLM age.</i></h2>
+    <div id="canvas-container">
+      <!-- Canvas will be added by Three.js here -->
+    </div>
+
+    <p>Reach us on <a href="xmpp:ruffed@movim.eu">xmpp</a>.</p>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
